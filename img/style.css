@@ -19,7 +19,7 @@
 
  /* global css */
 .container{
-    width: 60%;
+    width: 65%;
     display: flex;
 }
 .title{
@@ -377,23 +377,126 @@
     letter-spacing: 1.35px;
 }
 
-
 /* CSS for Instructors  */
 .instructors{
-    height: 300px;
+    height: 500px;
     padding-top: 100px;
     padding-bottom: 100px;
-    background-color: thistle;
+    background-color: white;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items:center;
 }
-.wrapper{
+.insta-title{
     font-family: "Comfortaa", cursive;
     font-size: 44px;
     font-weight: 700;
-     
+    text-align: center;
+    margin-bottom: 50px;
 }
-.insta-content{
-    display: block;
-    margin-bottom: 15px;
+.wrapper{
+    display: flex;
+    justify-content:space-evenly;
+    gap: 25px;
+}
+.inst-name{
+    font-family: "Comfortaa", cursive;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    letter-spacing: -.02em;
+    margin-top: 28px;
+}
+.inst-content img:hover{
+    transform: scale(1.05); 
+    transition: .3s ease;
+}
+.inst-desc{
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: .05em;
+    color: #777777; 
+}
+
+/* Css for Blog section  */
+.blog{
+    /* height: 500px; */
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #eff3f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog-title{
+    font-family: "Comfortaa", cursive;
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+    color: #151515;
+    padding-bottom: 50px;   
+}
+.blog-cards{
+    height: 500px;
+    background-color: #eff3f8;
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 31.5%;
+    height: 100%;
+    background-color:white;
+}
+.card img{
+    width: 100%;
+}
+.blog-content{
+    text-align: left;
+    padding: 34px 7% 45px;
+    /* background-color: #e1e1e1; */
+}
+.blog-content .blog-date{
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 15px;
+    color: #777777;
+    letter-spacing: .05em;
+    /* line-height: 1.6; */
+}
+.blog-content .blog-head{
+    font-family: "Comfortaa", cursive;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 15px;
+    line-height: 1.36364;
+}
+.blog-content .blog-details{
+    font-size: 15px;
+    margin-top: 18px;
+    line-height: 1.74;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    letter-spacing: .05em;
+    color: #777777;
+}
+
+ /* Css for Footer  */
+
+.footer{
+    height: 350px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 100%;
+    background: #2a333f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descr{
+    font-family: "Comfortaa", cursive;
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
 }
