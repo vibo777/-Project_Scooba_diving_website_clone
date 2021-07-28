@@ -271,6 +271,7 @@
     background-image: url('/img/BG_hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -634,19 +635,44 @@
 
  /* Css for Footer  */
 
-.footer{
+ .footer{
     height: 350px;
     padding-top: 100px;
     padding-bottom: 100px;
-    width: 100%;
     background: #2a333f;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    
 }
-.descr{
+.footer-main{
+    height: 250px;
+    /* background-color: lightgray; */
+    /* opacity: 0.7; */
+    
+}
+
+.footer-gallery{
+    width: 30%;
+    /* background-color:darkorange; */
+    /* opacity: 0.4; */
+}
+.gallery-title{
+    font-family: "Comfortaa", cursive;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.footer-gallery img{
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* .descr{ 
     font-family: "Comfortaa", cursive;
     color: white;
     font-size: 25px;
     font-weight: 400;
-}
+} */
