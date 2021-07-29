@@ -638,26 +638,19 @@
  .footer{
     height: 350px;
     padding-top: 100px;
-    /* padding-bottom: 100px; */
+    padding-bottom: 100px;
     background: #2a333f;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    /* justify-content:space-evenly; */
-    
 }
 .footer-main{
     height: 250px;
-    /* background-color: lightgray; */
-    /* opacity: 0.7; */
-    
 }
 
 .footer-gallery{
     width: 35%;
     /* background-color:darkorange; */
-    /* opacity: 0.4; */
 }
 .gallery-title{
     font-family: "Comfortaa", cursive;
@@ -674,7 +667,21 @@
 .footer .footer-details{
     height: 250px;
     width: 25%;
-    background-color:tomato;
+    color: white;
+    /* background-color:tomato; */
+
+}
+.inner-details{
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    width: 100%;
+    color: white; 
+    margin-bottom: 25px;   
+}
+.icon{
+    width: 35px;
+    color: #f8ea49;
+    font-size: 18px;
 }
 
 .footer-main{
@@ -687,36 +694,63 @@
     font-weight: 700;
     color: #ffffff;
     margin-bottom: 25px;
-
+}
+.footer-details>ul>li{
+    list-style-type: none;
 }
 
 /* Css for Quick links  */
+ 
 .quick-links{
+    font-family: "Lato", 'sans-serif';
     padding-right: 15px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: .05em;
     /* padding-left: 15px; */
     width: 40%;
-    background-color: lightseagreen;
+    /* background-color: lightseagreen; */
     margin-bottom: 50px;
+    color: white;
+    
 }
-.blank-div{
-    height: 100px;
-    width: 100%;
+.quick-links>ul>li{
+    list-style-type: none;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    transition: .4s;
+    cursor: pointer;
+}
+.quick-links>ul>li:hover .link-line{
+    width: 34px; 
+}
+.quick-links>ul>li:hover{
+    color: #0473db;
+}
+.link-line{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 2px;
+    width: 17px;
+    margin-right: 15px;
+    transition: .4s;
 }
 
 .descr{ 
-    height: auto;
+    height: 100px;
     width: 100%;
-    background-color:black;
-    font-family: "Comfortaa", cursive;
-    color: white;
-    font-size: 25px;
-    font-weight: 400;
+    border-top: 1px solid #777777;
+    /* background-color:black; */
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #777777;
+    font-size: 15px;
+    font-weight: 100;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    align-self: flex-end;
+    align-items: center;
+    position: absolute;
+    margin-top: 350px;
 }
-/* .descr .descr-title{
-    margin-top: 100px;
-}    */
+ 
