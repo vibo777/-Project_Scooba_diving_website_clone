@@ -736,6 +736,38 @@
     margin-right: 15px;
     transition: .4s;
 }
+.contact-details{
+    line-height: 24px;
+    letter-spacing: 0.75px;  
+}
+.contact-details:hover{
+    color: #0473db;
+    cursor: pointer;
+}
+
+.social-media-icons{
+    width: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+.social-media-icons>p{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: .4s;
+}
+.social-media-icons>p:hover{
+    color: #0473db;
+    border: 1px solid #0473db;
+    cursor: pointer;
+}
+
 
 .descr{ 
     height: 100px;
