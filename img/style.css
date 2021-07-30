@@ -557,6 +557,10 @@
     font-weight: 700;
     letter-spacing: -.02em;
     margin-top: 28px;
+    cursor: pointer;
+}
+.inst-content .inst-name:hover{
+    color: #0473db;
 }
 .inst-content img:hover{
     transform: scale(1.05); 
@@ -571,6 +575,26 @@
     letter-spacing: .05em;
     color: #777777; 
 }
+.social-icon{
+    width: 100%;
+    display: flex;
+    /* background-color: #f8ea49; */
+    justify-content: center;
+    align-items: center;
+}
+.social-icon>p{
+    font-size: 20px;
+    margin-top: 15px;
+    color: #151515;  
+    padding: 8px;
+    cursor: pointer;
+    
+}
+.social-icon>p:hover{
+    transition: .5s;
+    color: #0473db;
+}
+
 
 /* Css for Blog section  */
 .blog{
@@ -581,6 +605,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .blog-title{
     font-family: "Comfortaa", cursive;
@@ -595,15 +620,26 @@
     background-color: #eff3f8;
     display: flex;
     justify-content: space-between;
+
 }
 .card{
     width: 31.5%;
     height: 100%;
     background-color:white;
+    
 }
+/* .blog-cards .card:hover{
+    
+} */
 .card img{
     width: 100%;
 }
+.card img:hover{
+    transition: .4s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
 .blog-content{
     text-align: left;
     padding: 34px 7% 45px;
@@ -622,6 +658,10 @@
     font-weight: 700;
     margin-top: 15px;
     line-height: 1.36364;
+    cursor: pointer;
+}
+.blog-content .blog-head:hover{
+    color: #0473db;
 }
 .blog-content .blog-details{
     font-size: 15px;
