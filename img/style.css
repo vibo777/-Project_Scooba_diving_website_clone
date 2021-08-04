@@ -29,7 +29,10 @@
     text-align: center;
     margin-top: 65px;
 }
-
+.gallery-img{
+    height: 100%;
+    background-color: red;
+}
 
  /* CSS for banner */
  .banner{
@@ -526,6 +529,112 @@
     letter-spacing: .025em;
     color: #0473db;
     /* text-align: center; */
+}
+
+/* CSS for gallery  */
+.gallery{
+    width: 100%;
+    height: 900px;  
+    padding-top: 120px;
+    padding-bottom: 100px;
+    background-color:plum;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery .g-title{
+    font-weight: 700;
+    font-family: "Comfortaa", cursive;
+    font-size: 44px;
+    text-align: center;
+}
+.gallery-img{
+    margin-top: 50px;
+}
+
+/* CSS for Newsletter  */
+.newsletter{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /* background-color:#0473db; */
+    height: 120px;
+    background-image: url('./newsletter-bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.news-content{
+    height: 100px;
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.news-content .news-heading h1{
+    font-size: 44px;
+    font-family: "Comfortaa", cursive;
+    font-weight: 700;
+    color: #ffffff;
+}
+.news-content .news-heading p{
+    margin-top: 15px;
+    opacity: .7;
+    font-size: 15px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: .05em;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.news-input{
+    height: 40px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    width: 50%;
+    /* background-color: brown; */
+    border-bottom: 1px solid #f5543f ;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.form-input{
+    text-align: center;
+    width: 99.9%;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    line-height: 24px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: transparent;
+    background-image: none;
+    color: #ffffff;
+    border: none;
+    padding: 17px 0;
+}
+.news-btn{
+    color: #151515;
+    min-width: 190px;
+    min-height: 70px;
+    font-size: 14px;
+    font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    height: 60px;
+    width: 170px;
+    background-color: #f8ea49;
+    border-radius: 8px;
+    border: 2px solid #f8ea49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.news-input ::placeholder{
+    color: #ffffff;
+    opacity: .9;
 }
 
 /* CSS for Instructors  */
