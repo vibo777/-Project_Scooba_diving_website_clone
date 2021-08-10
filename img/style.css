@@ -152,7 +152,7 @@
 .nav>ul>li:first-child{
     color: #f8ea49;
 }
-
+ 
 /* css for banner-content  */
 .banner-details{
     margin-top: 90px;
@@ -169,7 +169,7 @@
 .banner-details .heading > h1{
     line-height: 80px;
 }
-
+  
 .banner-details .banner-para{
     padding-top: 30px;
     padding-bottom: 50px;
@@ -209,7 +209,7 @@
     text-indent: 17px;
     letter-spacing: 1px;
 }
-
+ 
 .next-button>.btn-line{
     width: 50%;
     height: 2px;
@@ -221,7 +221,7 @@
 }
 
 /* Css for Destination  */
-
+  
 .destination{
     height: 650px;
     padding-top: 20px;
@@ -238,12 +238,12 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    
+    cursor: pointer;
 }
 .dest-cards .cards{
     height: 60%;
     width: 29%;
-    border: 1px solid gray;
+    border: 1px solid #e1e1e1;
     padding: 15px;
     transition: .25s;
     /* background-color: yellow;    */
