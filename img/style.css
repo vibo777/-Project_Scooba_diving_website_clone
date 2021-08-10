@@ -166,6 +166,10 @@
     font-weight: bold;
     font-family: 'Comfortaa', cursive;
 }
+.banner-details .heading > h1{
+    line-height: 80px;
+}
+
 .banner-details .banner-para{
     padding-top: 30px;
     padding-bottom: 50px;
@@ -186,7 +190,9 @@
     border-radius: 8px;
     border: 2px solid #f8ea49;
 }
-
+.mob{
+    display: none;
+}
 .next-button{
     height: 60px;
     width: 3.5%;
