@@ -142,4 +142,28 @@
 .equipment{
     width: 90%;
 }
+/* end of css features  */
+
+/* css for details  */
+.details{
+    height: auto;
+}
+.details .stats .child .number{
+    font-size: 26px;
+    line-height: 1.12069;   
+    
+}
+.stats-text{
+    font-size: 14px;
+}
+.details .stats .child{
+    height: 125px;
+}
+.stats-line{
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.details .stats{
+    flex-direction: column  ;
+} 
 }
