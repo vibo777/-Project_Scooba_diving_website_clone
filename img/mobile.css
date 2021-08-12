@@ -13,7 +13,7 @@
 /* end */
 
 .banner{
-    align-items: flex-start;
+     align-items: flex-start;
  }
  .banner-content{
     width: 100%;
@@ -252,21 +252,57 @@
 /* css for footer  */
 .footer{
     height: auto;
+    padding-top: 50px;
 }
 .footer-main{
     height: auto;
     display: flex;
     flex-direction: column;
-    align-self: center;
+    align-items: center;
 }
 
 .footer-gallery{
+    height: auto;
     width: 95%;
     /* background-color:darkorange; */
 }
 .footer-gallery img{
     display: inline-block;
+    max-width: 100%;
+    height: 150px;
 }
-
-
+.gallery-title{
+    font-size: 16px;
+    text-align: center;
+}
+ .footer-details{
+     width: 100%;
+ }
+ .footer-details .details-title{
+    /* margin-top: 25px; */
+    font-family: "Comfortaa", cursive;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+.quick-links{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 90%;
+}
+.details-list{
+    width: 100%;
+}
+.footer-details .details-title{
+    font-size: 16px;
+}
+.inner-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-details{
+     font-size: 13px;
+}
 }
