@@ -392,7 +392,6 @@
 
 
 /* css for Details */
-
 .details{
     height: 400px;
     width: 100%;
@@ -410,14 +409,14 @@
     /* background-color: cornflowerblue; */
     display: flex;
     justify-content:space-between;
-    align-items: center ;
-  
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .details .stats .child{
     height: 200px;
     width: 200px;
-    background-color:black;
+    /* background-color:black; */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -980,7 +979,7 @@
     padding-bottom: 22px;
     width: 50%;
     /* background-color: brown; */
-    border-bottom: 1px solid #f5543f ;
+    border-bottom: 1px solid #e1e1e1 ;
     /* display: flex;
     justify-content: center;
     align-items: center; */
@@ -1303,7 +1302,7 @@
 }
 
 
-.sub-footer.descr{ 
+.sub-footer{ 
     height: 100px;
     width: 100%;
     border-top: 1px solid #777777;
@@ -1317,6 +1316,6 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin-top: 350px;
+    background: #2a333f;
 }
  
