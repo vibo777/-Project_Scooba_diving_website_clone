@@ -18,6 +18,10 @@
 }
 
  /* global css */
+.mob{
+    display: none !important;
+}
+
 .container{
     width: 65%;
     display: flex;
@@ -657,7 +661,7 @@
 }
 
 
-.user:nth-child(1){
+.testimonial-users .user:nth-child(1){
     animation-name: user1;
     animation-play-state: running;
     animation-iteration-count: infinite;
@@ -666,7 +670,7 @@
     animation-delay: 4s;
 }
 
-.user:nth-child(2){
+.testimonial-users .user:nth-child(2){
     animation-name: user2;
     animation-play-state: running;
     animation-iteration-count: infinite;
@@ -676,7 +680,7 @@
     opacity: .5;
 }
 
-.user:nth-child(3){
+.testimonial-users .user:nth-child(3){
     animation-name: user3;
     animation-play-state: running;
     animation-iteration-count: infinite;

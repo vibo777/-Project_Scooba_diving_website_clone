@@ -8,7 +8,7 @@
     display: none;
 }
 .mob{
-    display: inline-block;
+    display: inline-block !important;
 }
 /* end */
 
@@ -141,13 +141,118 @@
     height: 100%;
     background-image: none;
     background-color: #eff3f8;
-    flex-direction: column;
+    flex-direction: column;   
     align-items: center;
+    padding-top: 80px;
+    padding-bottom: 40px;
 }
 .equipment{
     width: 90%;
+    margin-bottom: 70px;
 }
+.eq{
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
+.eq-child{
+    flex-direction: column;
+}
+.equipment:nth-child(1) .eq-child{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.rf{
+    text-align: center;
+}
+.lf{
+    text-align: center;
+}
+.brd{
+    border: none;
+}
+.eq-img>img{
+    width: 60px;
+}
+.eq-title{
+    font-size: 20px;
+}
+
 /* end of css features  */
+
+/* css for about-us  */
+.about-us{
+    /* height: auto; */
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+.divers-hero{
+    flex-direction: column;
+    height: 90%;
+    width: 90%;
+}
+.divers-services{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin-top: 80px;
+}
+.divers-services .services-location{
+    width: 90%; 
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.services-content{
+    text-align: center;
+}
+.divers-hero .divers-title{
+    font-size: 22px;
+    text-align: center;
+}
+.list-points{
+    font-size: 14px;
+    padding: 15px 0 15px 20px;
+}
+.services-title{
+    font-size: 20px;
+}
+/* .divers-services .services-location{
+    justify-content: center;
+}
+ */
+  
+/* end of css about-us */
+
+/* css for testimonials */
+.testimonial{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.slider-text{
+    font-size: 16px;
+}
+.testimonial>.title{
+    font-size: 22px;
+}
+.testimonial-slider{
+    width: 95%;
+}
+.slider-text .user{
+    margin-top: 50px;
+    width: 100%;
+    display: flex !important;
+}
+
+
+/* end of css testomonials */
+
+
+
+
+
+
+
 
 /* css for details  */
 .details{
@@ -336,12 +441,47 @@
 .g-img{
     width: 270px;
     height: auto;
+    flex-direction: column;
 }
 .gimage>img{
     width: 100%;
     height: auto;
 } 
-
-
+.goverlay{
+    position: static;
+    width: 100%;
+    height: 100px;
+    display: none;
+}
+.over-details{
+    position:static;
+    background-color: #f9faf9;
+}
+.over-title{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 1);
+}
+.g-img:hover .over-title{
+    color: rgba(0, 0, 0, 1);
+}
+.over-content{
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.zoom-icon{
+    background-color: rgba(4, 115, 219, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.g-img:hover .zoom-icon{
+    margin-left: 0px;
+    margin-top: 0px;
+}
+.g-img:hover .over-content{
+    height: 160px;
+}
 
 }
