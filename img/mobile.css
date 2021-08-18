@@ -320,7 +320,10 @@
 
   /* css for gallery  */
 .gallery{
-      height: auto;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
   }
 .gallery-img{
     display: flex;
@@ -328,12 +331,16 @@
     align-items: center;
 }
 .g-img>.gimage {
-    position: relative;
+    position: static;
 }
- 
- 
-       
-
+.g-img{
+    width: 270px;
+    height: auto;
+}
+.gimage>img{
+    width: 100%;
+    height: auto;
+} 
 
 
 
