@@ -38,6 +38,32 @@
     background-color: red;
 }
 
+ /* CSS for back to top button  */
+.btt{
+    height: 60px;
+    width: 60px;
+    color: white;
+    background-color: #0473db;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 120;
+    margin-left: 95%;
+    margin-top: 87vh;
+    opacity: .6;
+    transform: 15vh;
+    transition: .6s;
+    cursor: pointer;
+}
+.btt:hover{
+    opacity: 1;
+}
+
+
+
+
  /* CSS for banner */
  .banner{
     height: 97vh;
