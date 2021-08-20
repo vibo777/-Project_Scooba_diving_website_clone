@@ -675,7 +675,7 @@
     height:85px;
     width: 85px;
     border-radius: 50%;
-    background-color: red;
+    /* background-color: red; */
     overflow: hidden;
 }
 
@@ -984,7 +984,7 @@
     padding-bottom: 100px;
     /* background-color:#0473db; */
     height: 120px;
-    background-image: url('./newsletter-bg.jpg');
+    background-image: url('./img/newsletter-bg.jpg');
     background-size: cover;
     background-position:center center;
     display: flex;
