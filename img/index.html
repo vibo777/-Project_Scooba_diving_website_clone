@@ -18,6 +18,18 @@
       <i class="fa fa-arrow-up" aria-hidden="true"></i>
     </div>
 
+    <!-- Navigation for mobile phones  -->
+    <div class="mob-nav mob" id="mob-nav">
+      <ul class="list-items">
+        <li class="item" id="item1">HOME</li>
+        <li class="item">PAGES</li>
+        <li class="item">BLOG</li>
+        <li class="item">GALLERY</li>
+        <li class="item">ELEMENTS</li>
+        <li class="item">CONTACTS</li>
+      </ul>
+    </div>
+
     <!-- banner -->
     <section>
       <div class="banner">
@@ -35,7 +47,7 @@
               <p>info@demolink.org</p>
             </div>
             <div class="child">
-              <p class="mob menu-lines">
+              <p class="mob menu-lines" id="menu-lines">
                 <span class="head-line"></span>
                 <span class="head-line"></span>
                 <span class="head-line"></span> 
@@ -621,18 +633,22 @@
 
           <!-- Quick links -->
           <div class="quick-links">
-            <p class="gallery-title">Quick Links</p>
+            <p class="quicklinks-title">Quick Links</p>
                 <ul>
                   <li> <span class="link-line"></span> About us </li>
                   <li> <span class="link-line"></span> what we offer </li>
                   <li> <span class="link-line"></span> FAQ </li>
                   <li> <span class="link-line"></span> Instructor </li>
-                  <!-- <li> <span class="link-line"></span> About us </li>
-                  <li> <span class="link-line"></span> what we offer </li>
-                  <li> <span class="link-line"></span> FAQ </li>
-                  <li> <span class="link-line"></span> Instructor </li> -->
                 </ul>
-          </div>
+                <div class="links-list">
+                  <ul>
+                    <li> <span class="link-line"></span> Contact us </li>
+                    <li> <span class="link-line"></span> Blog </li>
+                    <li> <span class="link-line"></span> Gallery</li>
+                    <li> <span class="link-line"></span> Pricing </li>
+                  </ul>
+                </div>
+            </div>
 
           <!-- Get in touch -->
           <div class="footer-details">
@@ -680,6 +696,7 @@
       <p class="descr-title"> ©  2021 Divers.  All rights reserved. Privacy Policy. </p>  
     </section>
 
+    <!-- Javascript code for functionality -->
     <script>
 
       window.onscroll = function(){
@@ -725,12 +742,44 @@
         }
         
         // code for back to top click functionality 
-        document.getElementById('btt').addEventListener("click",function(){
+        
+        let scrollValue;
 
+        function scrollToTop(){
           
+          window.scrollTo(0,scrollValue);
+          if(scrollValue > 0){
+              scrollValue-=40; 
+          }
+          else{
+              cancelAnimationFrame(anim);
+          }
+
+          let anim = requestAnimationFrame(scrollToTop);
+
+        }
+ 
+        document.getElementById('btt').addEventListener("click",function(){
+    
+            scrollValue = window.pageYOffset;
+            scrollToTop();
         })
 
+        // Functionality of header for mobile 
 
+        let mobNavStatus=false; 
+
+        document.getElementById('menu-lines').onclick=function(){
+          
+            if(mobNavStatus===false){
+              document.getElementById('mob-nav').style.marginLeft="0";
+              mobNavStatus=true;
+            }
+            else{
+              document.getElementById('mob-nav').style.marginLeft="-65%";
+              mobNavStatus=false;
+            }
+        }
 
     </script>
 

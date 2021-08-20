@@ -4,14 +4,49 @@
 }
 
  /* To hide elements in mobile */
-.header .child:nth-child(1),.nav,.pre-button ,.next-button , .desktop{
+.header .child:nth-child(1),.nav,.pre-button ,.next-button ,.desktop,.nav-parent{
     display: none;
 }
 .mob{
-    display: inline-block !important;
+    display: inline-block !important;   
 }
 /* end */
 
+ /* back to top button  */
+.btt{
+    margin-left: 85%;
+}
+
+/* mobile navigation  */
+.mob-nav{
+    width: 65%;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+    margin-top: 60px;
+    font-family: 'Poppins', sans-serif;
+    /* list-style-type:none; */
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-left: -65%;
+    transition: .4s;
+}
+.mob-nav>ul>li{
+    padding: 15px;
+    cursor: pointer;
+}
+.mob-nav>ul>li:first-child{
+    color: white;
+    background-color: #0473db;
+}
+.header{
+    position: fixed;
+    z-index: 110;
+}
+
+ 
 .banner{
      align-items: flex-start;
  }
@@ -49,7 +84,7 @@
     border: 2px solid #f8ea49;
 }
 .banner-details{
-    margin-top: 20px;
+    margin-top: 100px;
 }
 .banner-details .banner-para{
     padding-top: 15px;
@@ -73,26 +108,30 @@
     /* background-color: #f8ea49; */
 }
 .menu-dots,.menu-lines{
-    display: flex;
+    display: flex !important;
     flex-direction: column; 
     justify-content:space-around;
     align-items: center;     
     padding-left: 15px;
     padding-right: 15px;
     height: 25px;
+    color: black;
+    cursor: pointer;
 } 
  .head-line{
-     height: 3px;
-     width: 25px;
-     background-color: black;
+    height: 3px;
+    width: 25px;
+    color: black !important; 
     margin-left: 20px;
- }
+    
+}
 
 .head-dot{
-     height: 6px;
+    height: 6px;
     width: 6px;
     border-radius: 60%;
-    background-color: black;
+    color: black !important;
+    
 }
 .logo{
     width: 100px;
@@ -407,6 +446,9 @@
     margin-top: 25px;
     margin-bottom: 25px;
     width: 90%;
+}
+.links-list{
+    margin-top: -128px;
 }
 .details-list{
     width: 100%;
